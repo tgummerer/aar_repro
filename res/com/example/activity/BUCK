@@ -1,0 +1,18 @@
+android_resource(
+  name = 'res',
+  res = 'res',
+  package = 'com.example',
+  deps = [
+    '//:appcompat',
+    '//:support-v4',
+    '//:design-library',
+  ],
+  visibility = [
+    'PUBLIC',
+  ],
+)
+
+project_config(
+  src_target = ':res',
+  src_roots = None,
+)

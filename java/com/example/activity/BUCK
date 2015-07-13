@@ -1,0 +1,15 @@
+android_library(
+  name = 'activity',
+  srcs = glob(['*.java']),
+  visibility = [ 'PUBLIC' ],
+  deps = [
+    '//res/com/example/activity:res',
+    '//:appcompat',
+    '//:support-v4',
+    '//:design-library',
+  ]
+)
+
+project_config(
+  src_target = ':activity',
+)
